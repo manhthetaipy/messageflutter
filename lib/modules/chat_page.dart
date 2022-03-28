@@ -13,43 +13,18 @@ class _ChatPageState extends State<ChatPage> {
     ChatUsers(
         text: "Mạnh Thế Tài",
         secondaryText: "Oke bạn nha!",
-        image: "images/userImage1.jpeg",
-        time: "Now"),
+        image: "images/userImage1.jpg",
+        time: "Vừa xong"),
     ChatUsers(
-        text: "Hello",
-        secondaryText: "That's Great",
+        text: "Nguyễn Quang Tươi",
+        secondaryText: "Oke bạn",
         image: "images/userImage2.jpeg",
         time: "Yesterday"),
     ChatUsers(
-        text: "Jorge Henry",
-        secondaryText: "Hey where are you?",
+        text: "Đỗ Thanh Phú",
+        secondaryText: "Oke?",
         image: "images/userImage3.jpeg",
         time: "31 Mar"),
-    ChatUsers(
-        text: "Philip Fox",
-        secondaryText: "Busy! Call me in 20 mins",
-        image: "images/userImage4.jpeg",
-        time: "28 Mar"),
-    ChatUsers(
-        text: "Debra Hawkins",
-        secondaryText: "Thankyou, It's awesome",
-        image: "images/userImage5.jpeg",
-        time: "23 Mar"),
-    ChatUsers(
-        text: "Jacob Pena",
-        secondaryText: "will update you in evening",
-        image: "images/userImage6.jpeg",
-        time: "17 Mar"),
-    ChatUsers(
-        text: "Andrey Jones",
-        secondaryText: "Can you please share the file?",
-        image: "images/userImage7.jpeg",
-        time: "24 Feb"),
-    ChatUsers(
-        text: "John Wick",
-        secondaryText: "How are you?",
-        image: "images/userImage8.jpeg",
-        time: "18 Feb"),
   ];
   @override
   Widget build(BuildContext context) {
@@ -66,7 +41,7 @@ class _ChatPageState extends State<ChatPage> {
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: <Widget>[
                     Text(
-                      "Chats",
+                      "Nhắn tin",
                       style:
                           TextStyle(fontSize: 30, fontWeight: FontWeight.bold),
                     ),
@@ -76,20 +51,20 @@ class _ChatPageState extends State<ChatPage> {
                       height: 30,
                       decoration: BoxDecoration(
                         borderRadius: BorderRadius.circular(30),
-                        color: Colors.pink[50],
+                        color: Colors.yellow[50],
                       ),
                       child: Row(
                         children: <Widget>[
                           Icon(
                             Icons.add,
-                            color: Colors.pink,
+                            color: Colors.green,
                             size: 20,
                           ),
                           SizedBox(
                             width: 2,
                           ),
                           Text(
-                            "New",
+                            "Thêm mới",
                             style: TextStyle(
                                 fontSize: 14, fontWeight: FontWeight.bold),
                           ),
@@ -104,7 +79,7 @@ class _ChatPageState extends State<ChatPage> {
               padding: EdgeInsets.only(top: 16, left: 16, right: 16),
               child: TextField(
                 decoration: InputDecoration(
-                  hintText: "Search...",
+                  hintText: "Tìm bạn tâm sự",
                   hintStyle: TextStyle(color: Colors.grey.shade400),
                   prefixIcon: Icon(
                     Icons.search,
